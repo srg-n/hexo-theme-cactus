@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html<%= config.language ? " lang=" + config.language.substring(0, 2) : ""%>>
 <%- partial('_partial/head') %>
-<body class="max-width mx-auto px3 <%- theme.direction -%>">
+<body class="max-width mx-auto px3 <%- theme.direction -%>" style="border-style: solid; border-color: #8A9BA9; border-width: 4px; margin-top: 2rem;">
     <% if (is_post()) { %>
       <%- partial('_partial/post/actions_desktop') %>
     <% } %>
-    <div class="content index py4">
+    <div class="content index py4" style="padding-top: 2rem;">
         <% if (!is_post()) { %>
           <%- partial('_partial/header') %>
         <% } %>
